@@ -3,8 +3,8 @@
 
 **Различные варианты инициализации массива:**
 
-bool[] ba1 = new bool[3];
-Console.WriteLine("ba1[0]: " + ba1[0].ToString());
+`bool[] ba1 = new bool[3];
+Console.WriteLine("ba1[0]: " + ba1[0].ToString());`
 
 После объявления массива значения элементам присваиваются через индекс:
 
