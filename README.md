@@ -52,47 +52,13 @@ Console.WriteLine($"da2: {da2[0]}, {da2[1]}, {da2[2]}"); `
 ## **Многомерные массивы**
 Массивы имеющее более одного измерения называются многомерными.
 
+` double[,] dm1 = new double[3, 3]; `
+
 **Прямоугольные массивы**
 Прямоугольные массивы могут содержать несколько измерений (два и более), при этом количество элементов в каждом подизмерении (в каждой строке) одинаково.
 
-` double[,] dm1 = new double[3, 3];
-
-for (int i = 0; i < 3; i++)
-    for (int j = 0; j < 3; j++)
-        dm1[i, j] = i + j;
-        
-for (int i = 0; i < 3; i++)
-{
-    for (int j = 0; j < 3; j++)
-        Console.Write($"{dm1[i, j]} ");
-    Console.WriteLine();
-}
-Console.WriteLine();
-
-double[,] dm2 = { { 1, 2, 3 }, { 4, 5, 6 } };
-
-for (int i = 0; i < 2; i++)
-{
-    for (int j = 0; j < 3; j++)
-        Console.Write($"{dm2[i, j]} ");
-    Console.WriteLine();
-}
-Console.WriteLine(); `
-
 **Зубчатые массивы**
 В зубчатых массивах элементами верхнего уровня являются другие массивы, это позволяет создавать многомерные структуры, у которых строки имеют разную длину.
-
-` int[][] nm1 = new int[3][];
-
-for(int i = 0; i < nm1.Length; i++)           
-    nm1[i] = new int[i+1];
- 
-for(int i = 0; i < nm1.Length; i++)
-{
-    for(int j = 0; j < nm1[i].Length; j++)
-        Console.Write($"{nm1[i][j]} ");
-    Console.WriteLine();
-} `
 
 **Методы класса System.Array**
 
